@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KUSHAL KARKI | HOME</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="/images/logo.png" alt="" width="50px" height="50px" ></a>
+        </div>
+        <div class="hello">
+                    
+            <button type="submit" onclick="contact()">Say hello</button>
+        
+        </div>
+    </nav> 
+<!-- <div class="model">
+  <box-icon name='check-square' color="white" size="md"></box-icon>
+
+</div> -->
+
+<div class="contact">
+  <div class="contact-head">
+      <img src="images/profile.png" width="200px" height="200px">
+     
+      <box-icon type='solid' onclick="home()" name='left-arrow-circle' size="md" color="#5E17EB" pull="right" id="back"></box-icon>
+  </div>
+  <div class="contact-cont">
+      <h1>I'm excited to learn about your project and ready to get started.</h1>
+      <form action="{% url 'project' %}" method="POST">
+         <div class="boxs"> 
+          <div class="box">
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" required>
+          </div>
+          <div class="box">
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required>
+          </div>
+          
+      </div>
+<div class="dropbox"> 
+    <div class="drop-down">
+    <label for="dropdown">Type of project:</label><br>
+      <select id="dropdown" required name="project">
+        <option value=""></option>
+        <option value="web development">web development</option>
+        <option value="software development">software development</option>
+        
+        </select>
+      </div>
+      <div class="drop-down" >
+        <label for="dropdown">Estimate budget:</label><br>
+        <select id="dropdown" required name="budget">
+        <option value="0"></option>
+        <option value="5000$ - 10000$">5000$ - 10000$</option>
+        <option value="10000$ - 20000$">10000$ - 20000$</option>
+        <option value="20000$ plus">20000$ plus</option>
+       
+        </select>
+    </div>
+
+</div> 
+    
+
+          <div class="box-msg">
+              <label for="message">Message:</label><br>
+              <textarea  id="message" name="message" required></textarea>
+          </div>
+          <button type="submit">submit</button>
+        </form>
+  </div>
+  
+</div>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<script src="/js/index.js"></script>
+</body>
+</html>
